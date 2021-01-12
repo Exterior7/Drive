@@ -52,35 +52,43 @@ body {
         }
     }
 
-    &__hamburger-checkbox {
-        display: none;
-
-        &:checked + .nav__list {
-            display: flex;
-        }
-    }
-
-    &__hamburger-label {
-        align-items: center;
-        cursor: pointer;
-        display: flex;
-        flex-wrap: wrap;
-        height: 1.5rem;
-        padding: 0.75rem;
-        width: 1.5rem;
-
-        @media screen and (min-width: 40rem) {
+    &__hamburger {
+        &-checkbox {
             display: none;
+
+            &:checked+.nav__list {
+                display: flex;
+            }
+        }
+
+        &-label {
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            flex-wrap: wrap;
+            height: 1.5rem;
+            padding: 0.75rem;
+            width: 1.5rem;
+
+            @media screen and (min-width: 40rem) {
+                display: none;
+            }
+        }
+
+        &-line {
+            background: #222;
+            display: block;
+            height: 2px;
+            width: 1.5rem;
         }
     }
 
-    &__hamburger-line {
-        background: #222;
-        display: block;
-        height: 2px;
-        width: 1.5rem;
-    }
 }
+
+
+
+
+
 
 
 
