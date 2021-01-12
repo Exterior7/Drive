@@ -1,2 +1,2 @@
-# Drive
-Általános
+# scss
+ Oktatással kapcsolatos anyag
